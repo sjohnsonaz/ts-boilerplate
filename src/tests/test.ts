@@ -1,10 +1,10 @@
 import { expect } from 'chai';
 
-import Main from '../scripts/main';
+import Application from '../scripts/Application';
 
-describe('Main.run', () => {
+describe('Application.run', () => {
     it('should return "started"', () => {
-        var main = new Main();
-        expect(main.run()).to.equal('started');
+        var application = new Application();
+        expect(application.run()).to.equal('started');
     });
 });

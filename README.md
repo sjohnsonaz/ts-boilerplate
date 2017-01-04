@@ -52,7 +52,8 @@ This boilerplate can be used to start any TypeScript project. It also may be use
 
 3. Optionally, depending on your project, you may also run in Node
     1. Run Command Prompt (`cmd`)
-    2. `npm nodemon`
+    2. To run once, use `npm node`
+    3. To run and watch for file changes, use `npm nodemon`
 
 ## Test Project
 
