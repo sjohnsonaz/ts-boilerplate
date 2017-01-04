@@ -1,14 +1,14 @@
-var webpack = require('webpack');
-
 module.exports = {
     entry: {
-        'main': './src/scripts/main.tsx'
+        'main': './src/scripts/main.tsx',
+        'mochaRunner': './src/mocha/BrowserRunner.ts'
     },
     output: {
-        filename: './dist/bundle/[name].min.js',
+        filename: './dist/bundle/[name].js',
         libraryTarget: 'var',
         library: '[name]'
     },
+    devtool: 'source-map',
     resolve: {
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js']
     },
@@ -17,8 +17,5 @@ module.exports = {
             test: /\.tsx?$/,
             loader: 'ts-loader'
         }]
-    },
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin()
-    ]
+    }
 };

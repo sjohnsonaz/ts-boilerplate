@@ -5,37 +5,30 @@
   "repository": "https://www.github.com/sjohnsonaz/ts-boilerplate.git",
   "license": "MIT",
   "author": "Sean Johnson <sjohnson@sjohnsonaz.com>",
-  "main": "dist/main.js",
-  "typings": "dist/main.d.ts",
+  "main": "dist/scripts/main.js",
+  "typings": "dist/scripts/main.d.ts",
   "scripts": {
-    "start": "node ./dist/main.js",
-    "install": "typings install",
+    "start": "node ./dist/scripts/main.js",
+    "install": "",
     "build": "tsc",
     "prepublish": "tsc --declaration",
-    "test": "jest",
-    "browser": "webpack --config webpack.config.js",
-    "dev": "webpack --config webpack.config.js --watch",
-    "node": "node ./dist/main.js",
-    "nodemon": "nodemon ./dist/main.js"
+    "test": "node src/mocha/NodeRunner.js",
+    "min": "webpack --config webpack.config.js",
+    "dev": "webpack --config webpack.dev.config.js",
+    "watch": "webpack --config webpack.dev.config.js --watch",
+    "node": "node ./dist/scripts/main.js",
+    "nodemon": "nodemon ./dist/scripts/main.js"
   },
-  "dependencies": {
-    "promise": "^7.1.1",
-    "whatwg-fetch": "^1.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "babel-cli": "^6.16.0",
-    "babel-core": "^6.17.0",
-    "babel-eslint": "^7.0.0",
-    "babel-loader": "^6.2.5",
-    "babel-preset-es2015": "^6.16.0",
-    "jest-cli": "^12.1.1",
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.33",
+    "chai": "^3.5.0",
+    "jsdom": "^9.8.3",
+    "mocha": "^3.1.2",
     "nodemon": "^1.11.0",
     "ts-loader": "^0.9.5",
-    "typescript": "^2.0.3",
+    "typescript": "^2.1.4",
     "webpack": "^1.13.2"
-  },
-  "jest": {
-    "verbose": true,
-    "rootDir": "dist/"
   }
 }

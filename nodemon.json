@@ -1,9 +1,11 @@
 {
   "verbose": true,
-  "watch": ["dist/"],
+  "watch": [
+    "dist/"
+  ],
   "ignore": [
     "*.d.ts",
     "*.js.map",
-    "dist/__tests__/"
+    "dist/bundle/"
   ]
 }
