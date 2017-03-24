@@ -12,6 +12,10 @@ module.exports = {
     resolve: {
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js']
     },
+    externals: {
+        mocha: 'mocha',
+        chai: 'chai'
+    },
     module: {
         loaders: [{
             test: /\.tsx?$/,

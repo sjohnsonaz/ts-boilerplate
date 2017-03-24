@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "dist",
     "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
@@ -14,21 +15,12 @@
     "noLib": false,
     "preserveConstEnums": true,
     "suppressImplicitAnyIndexErrors": true,
-    "outDir": "dist",
     "sourceMap": true,
     "allowSyntheticDefaultImports": true
   },
-  "exclude": [
-    "bin",
-    "public",
-    "views",
-    "dist",
-    "node_modules",
-    "webpack.config.js"
+  "include": [
+    "src"
   ],
   "compileOnSave": true,
-  "buildOnSave": false,
-  "atom": {
-    "rewriteTsconfig": false
-  }
+  "buildOnSave": false
 }
