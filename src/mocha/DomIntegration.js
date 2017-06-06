@@ -36,6 +36,8 @@ module.exports = (function () {
 
                 global[key] = window[key]
             }
+            global.Node = window.Node;
+            global.Comment = window.Comment;
         }
     };
 
