@@ -1,3 +1,7 @@
+export function run() {
+    return 'Application started...';
+}
+
 window.onload = function () {
-    console.log('Application started...');
+    console.log(run());
 }
