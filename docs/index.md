@@ -66,5 +66,4 @@ This boilerplate can be used to start any TypeScript project. It also may be use
 
 2. Test in Node
     1. Run Command Prompt (`cmd`)
-    2. `tsc`
-    3. `npm test`
+    2. `npm test`
