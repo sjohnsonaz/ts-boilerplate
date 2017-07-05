@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node ./dist/scripts/main.js",
     "build": "tsc",
-    "prepublish": "tsc --declaration",
+    "prepublishOnly": "tsc --declaration",
     "test": "tsc && node src/mocha/NodeRunner.js",
     "min": "webpack --config webpack.config.js --progress",
     "dev": "webpack --config webpack.dev.config.js --progress",
