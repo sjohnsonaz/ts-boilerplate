@@ -23,14 +23,14 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/chai": "4.0.1",
-    "@types/mocha": "2.2.41",
-    "chai": "4.0.2",
-    "jsdom": "11.1.0",
+    "@types/chai": "4.0.4",
+    "@types/mocha": "2.2.43",
+    "chai": "4.1.2",
+    "jsdom": "11.3.0",
     "mocha": "3.4.2",
-    "nodemon": "1.11.0",
-    "ts-loader": "2.2.2",
-    "typescript": "2.4.1",
-    "webpack": "3.0.0"
+    "nodemon": "1.12.1",
+    "ts-loader": "2.3.7",
+    "typescript": "2.5.3",
+    "webpack": "3.6.0"
   }
 }
