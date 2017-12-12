@@ -10,7 +10,8 @@
   "scripts": {
     "start": "node ./dist/scripts/main.js",
     "build": "tsc",
-    "prepublishOnly": "tsc --declaration",
+    "clean": "rimraf ./dist",
+    "prepublishOnly": "rimraf ./dist && tsc --declaration",
     "test": "tsc && node src/mocha/NodeRunner.js",
     "min": "webpack --config webpack.config.js --progress",
     "dev": "webpack --config webpack.dev.config.js --progress",
@@ -23,14 +24,15 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/chai": "4.0.4",
-    "@types/mocha": "2.2.43",
+    "@types/chai": "4.0.10",
+    "@types/mocha": "2.2.44",
     "chai": "4.1.2",
-    "jsdom": "11.3.0",
-    "mocha": "3.4.2",
-    "nodemon": "1.12.1",
-    "ts-loader": "2.3.7",
-    "typescript": "2.5.3",
-    "webpack": "3.6.0"
+    "jsdom": "11.5.1",
+    "mocha": "4.0.1",
+    "nodemon": "1.12.5",
+    "rimraf": "2.6.2",
+    "ts-loader": "3.2.0",
+    "typescript": "2.6.2",
+    "webpack": "3.10.0"
   }
 }
