@@ -1,10 +1,11 @@
 module.exports = {
+    mode: 'development',
     entry: {
         'main': './src/scripts/main.ts',
         'mochaRunner': './src/mocha/BrowserRunner.ts'
     },
     output: {
-        filename: './dist/bundle/[name].js',
+        filename: './bundle/[name].js',
         libraryTarget: 'var',
         library: '[name]'
     },
@@ -17,9 +18,9 @@ module.exports = {
         chai: 'chai'
     },
     module: {
-        loaders: [{
+        rules: [{
             test: /\.tsx?$/,
-            loader: 'ts-loader'
+            use: ['ts-loader']
         }]
     }
 };
